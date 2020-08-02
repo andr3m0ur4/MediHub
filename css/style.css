@@ -27,6 +27,10 @@ header {
     width: 1080px;
     display: flex;
     justify-content: space-between;
+}
+
+.logo, .menu {
+    display: flex;
     align-items: center;
 }
 
@@ -60,4 +64,103 @@ nav ul li a:hover {
     background-position: center;
     background-size: cover;
     height: 670px;
+    display: flex;
+    justify-content: center;
+}
+
+#banner .container {
+    flex-direction: column;
+}
+
+.banner-heading {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-heading h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 70px;
+    color: #232323;
+    max-width: 350px;
+}
+
+.banner-heading h1 span {
+    color: #0cb8b6;
+}
+
+.banner-heading h2 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #232323;
+    max-width: 350px;
+    margin-top: 25px;
+}
+
+.banner-heading p {
+    font-size: 16px;
+    color: #232323;
+    max-width: 350px;
+    margin-top: 25px;
+}
+
+.banner-options {
+    height: 210px;
+    display: flex;
+}
+
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    padding: 20px;
+    color: white;
+}
+
+.banner1 {
+    background-color: #4fdfdc;
+}
+
+.banner2 {
+    background-color: #0cb8b6;
+}
+
+.banner3 {
+    background-color: #0a7c7a;
+}
+
+.banner-options h2 {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+.banner-options p {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.banner-options a {
+    display: inline-block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.banner-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-bottom: 1px solid #76a5a5;
+    padding-bottom: 10px;
+}
+
+.banner-conteudo-dia {
+    
+}
+
+.banner-conteudo-horario {
+    
 }
