@@ -157,10 +157,48 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
-.banner-conteudo-dia {
-    
+main {
+    display: flex;
+    justify-content: center;
 }
 
-.banner-conteudo-horario {
-    
+main section {
+    flex: 2;
+}
+
+main aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin: 30px 0 20px;
+}
+
+.widget-title h2 {
+    color: #232323;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.widget-title hr {
+    width: 50px;
+    border: 1.5px solid #0cb8b6;
+    margin-top: 10px;
+}
+
+.widget-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget-body .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-body .box {
+    height: 100px;
+    background-color: #0cb8b6;
 }
