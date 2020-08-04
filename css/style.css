@@ -515,6 +515,11 @@ footer .widget p {
     nav ul {
         flex-direction: column;
         display: none;
+        position: absolute;
+        left: 0;
+        top: 120px;
+        width: 100%;
+        background-color: white;
     }
 
     nav ul li a {
