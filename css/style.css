@@ -35,6 +35,21 @@ header {
     align-items: center;
 }
 
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 0;
+}
+
+#menu {
+    display: block;
+    background-image: url('../images/menu.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -108,7 +123,7 @@ nav ul li a:hover {
 }
 
 .banner-options {
-    height: 210px;
+    min-height: 210px;
     display: flex;
 }
 
@@ -199,7 +214,7 @@ main aside {
 
 .widget-body .box {
     flex: 1;
-    min-width: 150px;
+    min-width: 110px;
     height: 150px;
     background-color: #0cb8b6;
     margin-bottom: 25px;
@@ -324,6 +339,10 @@ article p {
     margin-bottom: 30px;
 }
 
+/**************************************************************************/
+/***********************    Rodapé    *************************************/
+/**************************************************************************/
+
 footer {
     background-color: #1d2024;
     display: flex;
@@ -378,6 +397,7 @@ footer .widget h2 {
 footer .widget p {
     color: #ccc;
     line-height: 22px;
+    margin-right: 10px;
 }
 
 .widget-endereco {
@@ -386,7 +406,7 @@ footer .widget p {
 }
 
 .widget-endereco p:first-of-type {
-    margin-right: 30px;
+    margin-right: 25px;
 }
 
 .widget-endereco p:last-of-type {
@@ -417,6 +437,10 @@ footer .widget p {
 
 .post, .tweet {
     margin-bottom: 25px;
+}
+
+.post {
+    margin-right: 10px;
 }
 
 .post a {
@@ -454,4 +478,111 @@ footer .widget p {
     color: #0cb8b6;
     text-decoration: none;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 1024px) {
+    header .logo {
+        width: 164px;
+    }
+
+    .logo img {
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .widget-endereco {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    header .logo {
+        width: auto;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        font-size: initial;
+    }
+
+    .widget-body .box:nth-child(2n + 1) {
+        margin-right: 0;
+    }
+
+    #form {
+        width: 42px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner {
+        height: auto;
+    }
+
+    .banner-heading {
+        padding-bottom: 20px;
+    }
+
+    .banner-heading h1 {
+        font-size: 55px;
+    }
+
+    .banner-heading h2 {
+        font-size: 25px;
+    }
+
+    .banner-options {
+        flex-direction: column;
+        height: auto;
+    }
+
+    main .container {
+        flex-direction: column;
+    }
+
+    aside {
+        padding-bottom: 20px;
+    }
+
+    .widget-body .box {
+        min-width: 150px;
+    }
+
+    .widget-body .box:nth-child(1n + 1) {
+        margin-right: 20px;
+    }
+
+    #form {
+        width: 32px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+
+    .footer-area {
+        flex-direction: column;
+    }
+
+    .widget-endereco {
+        flex: 1;
+        flex-direction: row;
+    }
 }
